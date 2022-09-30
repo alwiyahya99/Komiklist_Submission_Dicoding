@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".DetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="8dp">
+
+            <ImageView
+                android:id="@+id/img_Back_Detail"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/icon_back"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ContentDescription,MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/halaman_detail"
+                android:textColor="@color/color_004790"
+                android:textSize="16sp"
+                tools:ignore="MissingConstraints" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/img_Detail_Activity"
+                    android:layout_width="115dp"
+                    android:layout_height="180dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:src="@drawable/img_one_piece"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_Judul_Komik_Detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:text="@string/one_piece"
+                        android:textColor="@color/color_004790"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContent12sp"
+                            android:text="@string/by" />
+
+                        <TextView
+                            android:id="@+id/tv_Author_Komik_Detail"
+                            style="@style/TextContent12sp"
+                            android:textColor="@color/warna_0287D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContent12sp"
+                            android:text="@string/genre" />
+
+                        <TextView
+                            android:id="@+id/tv_Genre_Komik_Detail"
+                            style="@style/TextContent12sp"
+                            android:textColor="@color/warna_0287D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContent12sp"
+                            android:text="@string/tahun_rilis" />
+
+                        <TextView
+                            android:id="@+id/tv_Tahun_Komik_Detail"
+                            style="@style/TextContent12sp"
+                            android:textColor="@color/warna_0287D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContent12sp"
+                            android:text="@string/status" />
+
+                        <TextView
+                            android:id="@+id/tv_Status_Komik_Detail"
+                            style="@style/TextContent12sp"
+                            android:textColor="@color/warna_0287D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContent12sp"
+                            android:text="@string/jenis" />
+
+                        <TextView
+                            android:id="@+id/tv_Jenis_Komik_Detail"
+                            style="@style/TextContent12sp"
+                            android:textColor="@color/warna_0287D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/TextContent12sp"
+                            android:text="@string/serialization" />
+
+                        <TextView
+                            android:id="@+id/tv_Serial_Komik_Detail"
+                            style="@style/TextContent12sp"
+                            android:textColor="@color/warna_0287D0" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout style="@style/CardItemDetail">
+
+                            <LinearLayout
+                                style="@style/LinearCardItemDetail"
+                                tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                <TextView
+                                    style="@style/TextCardItemDetail"
+                                    android:text="@string/rating" />
+
+                                <TextView
+                                    android:id="@+id/tv_Rating_Komik_Detail"
+                                    style="@style/TextCardItemDetail"
+                                    android:textColor="@color/warna_97A5B2"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout style="@style/CardItemDetail">
+
+                            <LinearLayout
+                                style="@style/LinearCardItemDetail"
+                                tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                <TextView
+                                    style="@style/TextCardItemDetail"
+                                    android:text="@string/chapter" />
+
+                                <TextView
+                                    android:id="@+id/tv_Chapter_Komik_Detail"
+                                    style="@style/TextCardItemDetail"
+                                    android:textColor="@color/warna_97A5B2"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/cl_Share_Detail"
+                            style="@style/CardItemDetail">
+
+                            <LinearLayout
+                                style="@style/LinearCardItemDetail"
+                                tools:ignore="MissingConstraints,UseCompoundDrawables">
+
+                                <TextView
+                                    style="@style/TextCardItemDetail"
+                                    android:text="@string/share" />
+
+                                <ImageView
+                                    android:layout_width="20dp"
+                                    android:layout_height="19dp"
+                                    android:src="@drawable/icon_share"
+                                    tools:ignore="ContentDescription" />
+                            </LinearLayout>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="vertical"
+            tools:ignore="UselessLeaf">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/background_item_detail"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/synopsis"
+                android:textColor="@color/color_004790"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/tv_Synopsisi_Komik_Detail"
+                style="@style/TextContent12sp"
+                android:layout_marginTop="8dp"
+                android:text="@string/loremIpsum"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

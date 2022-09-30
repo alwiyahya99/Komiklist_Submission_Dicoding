@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Komiklist</string>
+    <string name="loremIpsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="loremIpsum2">Loremipsum.</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="share">Share</string>
+    <string name="_1061">1061</string>
+    <string name="chapter">Chapter</string>
+    <string name="rating">Rating</string>
+    <string name="serialization">Serialization</string>
+    <string name="jenis">Jenis</string>
+    <string name="status">Status</string>
+    <string name="tahun_rilis">Tahun Rilis</string>
+    <string name="genre">Genre</string>
+    <string name="by">By</string>
+    <string name="one_piece">One Piece</string>
+    <string name="halaman_detail">Halaman Detail</string>
+</resources>
