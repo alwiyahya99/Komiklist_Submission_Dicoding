@@ -29,6 +29,7 @@
                 android:textStyle="normal" />
 
             <ImageView
+                android:id="@+id/icn_about"
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_alignParentTop="true"

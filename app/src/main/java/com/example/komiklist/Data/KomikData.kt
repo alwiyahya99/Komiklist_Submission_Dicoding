@@ -4,13 +4,9 @@ import com.example.komiklist.R
 
 //"",
 object KomikData {
-    private val komikId = intArrayOf(
-        1,
-        2
-    )
     private val komikNama = arrayOf(
         "One Piece",
-        "Shingeki no Kyojin"
+        "Shingeki no Kyojin",
     )
     private val komikAuthor = arrayOf(
         " Echiro Oda",
@@ -37,8 +33,8 @@ object KomikData {
         " Manga"
     )
     private val komikSerialization = arrayOf(
-        "Shounen Jump (Weekly)",
-        "Bessatsu Shounen Magazine"
+        " Shounen Jump (Weekly)",
+        " Bessatsu Shounen Magazine"
     )
     private val komikRating = arrayOf(
         "9.8",
@@ -57,7 +53,6 @@ object KomikData {
         val list = arrayListOf<Komik>()
         for (position in komikNama.indices){
             val myKomik = Komik()
-            myKomik.DkomikId = komikId[position]
             myKomik.DkomikNama = komikNama[position]
             myKomik.DkomikAuthor = komikAuthor[position]
             myKomik.DkomikSynopsis = komikSynopsis[position]

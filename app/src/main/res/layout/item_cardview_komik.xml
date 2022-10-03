@@ -25,6 +25,7 @@
             android:id="@+id/img_Cv_Home"
             android:layout_width="90dp"
             android:layout_height="142dp"
+            android:scaleType="centerCrop"
             android:layout_marginRight="8dp"
             android:src="@drawable/img_one_piece"
             tools:ignore="ContentDescription" />

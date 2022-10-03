@@ -1,8 +1,10 @@
 package com.example.komiklist
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.komiklist.Adapter.KomikAdapter
@@ -19,6 +21,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
+        val aboutActivity : ImageView = findViewById(R.id.icn_about)
+        aboutActivity.setOnClickListener{
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
         rvKomik = findViewById(R.id.rv_komik)
         rvKomik.setHasFixedSize(true)
         list.addAll(KomikData.lisData)
