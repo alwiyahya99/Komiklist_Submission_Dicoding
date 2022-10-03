@@ -6,9 +6,9 @@ Project aplikasi ini untuk memenuhi tugas akhir yaitu **"Membuat Proyek Akhir Ap
 KomikList adalah project aplikasi untuk menampilkan daftar komik populer pada saat aplikasi ini di buat. 
 
 ## Features
-- [ ] Tampilan spalsh screen
-- [ ] Tampilan Home => Menampilkan daftar gambar dan informasi menggunakan format list
-- [ ] Tampilan Detail => menampilkan detail informasi dan gambar
-- [ ] Tampilan About => menampilkan informasi pembuat
+- [x] Tampilan spalsh screen
+- [x] Tampilan Home => Menampilkan daftar gambar dan informasi menggunakan format list
+- [x] Tampilan Detail => menampilkan detail informasi dan gambar
+- [x] Tampilan About => menampilkan informasi pembuat
 
 ## Tampilan UI :
