@@ -1,8 +1,10 @@
 package com.example.komiklist
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.media.Image
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -45,7 +47,8 @@ class DetailActivity : AppCompatActivity() {
         val tvRatingKomik : TextView = findViewById(R.id.tv_Rating_Komik_Detail)
         val tvChapterKomik : TextView = findViewById(R.id.tv_Chapter_Komik_Detail)
         val tvSynopsisKomik : TextView = findViewById(R.id.tv_Synopsisi_Komik_Detail)
-        val clShareKomik : ConstraintLayout = findViewById(R.id.cl_Share_Detail)
+        val clAction_share : ConstraintLayout = findViewById(R.id.action_share)
+        val btn_back : ImageView = findViewById(R.id.img_Back_Detail)
 
         val intent = intent
         val dataIntent = intent.getIntExtra(ExtraGambar,0)
@@ -75,5 +78,19 @@ class DetailActivity : AppCompatActivity() {
             .apply(RequestOptions())
             .into(imgDetail)
 
+        btn_back.setOnClickListener{
+            val intentBack = Intent(this, MainActivity::class.java)
+            startActivity(intentBack)
+            finish()
+        }
+
+        val url = "www.contohalamat.com/"+ EXTRA_JUDULKOMIK
+        clAction_share.setOnClickListener{
+            val intentShare = Intent(Intent.ACTION_SEND)
+            intent.type = "share/Komik"
+            intent.putExtra("Share this", url)
+            val chooser = Intent.createChooser(intentShare, "Share using.....")
+            startActivity(chooser)
+        }
     }
 }

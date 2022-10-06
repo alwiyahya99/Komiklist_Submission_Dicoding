@@ -21,8 +21,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         supportActionBar?.hide()
 
-        val aboutActivity : ImageView = findViewById(R.id.icn_about)
-        aboutActivity.setOnClickListener{
+        val about_page : ImageView = findViewById(R.id.about_page)
+        about_page.setOnClickListener{
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }

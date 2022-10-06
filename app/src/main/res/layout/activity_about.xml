@@ -36,28 +36,20 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="190dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/img_profile"
+        android:src="@drawable/alwiyahya"
         tools:ignore="ContentDescription" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
+        style="@style/txtAbout"
         android:text="@string/alwi_yahya_muljabar"
-        android:textColor="@color/color_004790"
-        android:textSize="16sp"
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:layout_marginTop="4dp"
+        style="@style/txtAbout"
         android:text="@string/alwizero404_gmail_com"
-        android:textColor="@color/color_004790"
-        android:textSize="16sp"
-        android:textStyle="normal" />
+        android:textStyle="normal"
+        android:layout_marginTop="8dp"/>
+
 </LinearLayout>

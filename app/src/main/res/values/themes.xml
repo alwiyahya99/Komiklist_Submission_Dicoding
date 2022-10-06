@@ -18,7 +18,7 @@
     <style name="TextContent12sp">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">11sp</item>
         <item name="android:textStyle">normal</item>
         <item name="android:text">@string/loremIpsum2</item>
     </style>
@@ -48,7 +48,15 @@
     </style>
     <style name="FrameBottom">
         <item name="android:layout_width">match_parent</item>
-         <item name="android:layout_height">10dp</item>
+        <item name="android:layout_height">10dp</item>
         <item name="android:background">@color/color_1B63A2</item>
+    </style>
+    <style name="txtAbout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/color_004790</item>
+        <item name="android:textSize">16sp</item>
     </style>
 </resources>

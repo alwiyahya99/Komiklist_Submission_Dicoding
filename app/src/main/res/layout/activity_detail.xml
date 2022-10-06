@@ -185,13 +185,13 @@
 
                                 <TextView
                                     style="@style/TextCardItemDetail"
-                                    android:textSize="12sp"
+                                    android:textSize="11sp"
                                     android:text="@string/rating" />
 
                                 <TextView
                                     android:id="@+id/tv_Rating_Komik_Detail"
                                     style="@style/TextCardItemDetail"
-                                    android:textSize="12sp"
+                                    android:textSize="11sp"
                                     android:textColor="@color/warna_97A5B2"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -205,13 +205,13 @@
 
                                 <TextView
                                     style="@style/TextCardItemDetail"
-                                    android:textSize="12sp"
+                                    android:textSize="11sp"
                                     android:text="@string/chapter" />
 
                                 <TextView
                                     android:id="@+id/tv_Chapter_Komik_Detail"
                                     style="@style/TextCardItemDetail"
-                                    android:textSize="12sp"
+                                    android:textSize="11sp"
                                     android:textColor="@color/warna_97A5B2"
                                     android:textStyle="bold" />
                             </LinearLayout>
@@ -219,7 +219,7 @@
                         </androidx.constraintlayout.widget.ConstraintLayout>
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/cl_Share_Detail"
+                            android:id="@+id/action_share"
                             style="@style/CardItemDetail">
 
                             <LinearLayout
@@ -228,12 +228,12 @@
 
                                 <TextView
                                     style="@style/TextCardItemDetail"
-                                    android:textSize="12sp"
+                                    android:textSize="11sp"
                                     android:text="@string/share" />
 
                                 <ImageView
                                     android:layout_width="wrap_content"
-                                    android:layout_height="17dp"
+                                    android:layout_height="15dp"
                                     android:src="@drawable/icon_share"
                                     tools:ignore="ContentDescription" />
                             </LinearLayout>
