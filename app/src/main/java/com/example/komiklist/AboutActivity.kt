@@ -14,9 +14,7 @@ class AboutActivity : AppCompatActivity() {
 
         val btn_back : ImageView = findViewById(R.id.img_Back_Detail)
         btn_back.setOnClickListener{
-            val intentBack = Intent(Intent.ACTION_SEND)
-            startActivity(intentBack)
-            finish()
+            onBackPressed()
         }
     }
 }

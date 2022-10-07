@@ -79,9 +79,7 @@ class DetailActivity : AppCompatActivity() {
             .into(imgDetail)
 
         btn_back.setOnClickListener{
-            val intentBack = Intent(this, MainActivity::class.java)
-            startActivity(intentBack)
-            finish()
+            onBackPressed()
         }
 
         val url = "www.contohalamat.com/"+ EXTRA_JUDULKOMIK
